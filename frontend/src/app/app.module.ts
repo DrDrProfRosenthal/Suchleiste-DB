@@ -5,7 +5,13 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { AccountsOverviewComponent } from './components/accounts-overview/accounts-overview.component';
 import { AccountDetailsComponent } from './components/account-details/account-details.component';
-import { HttpClientModule } from '@angular/common/http'; // Import the HttpClientModule
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: '', redirectTo: '/accounts', pathMatch: 'full' },
+  { path: 'accounts', component: AccountsOverviewComponent }
+];
 
 
 @NgModule({
@@ -18,8 +24,10 @@ import { HttpClientModule } from '@angular/common/http'; // Import the HttpClien
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes),
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
