@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Finanzübersicht",
+    "url": "http://localhost:4200/Finanzübersicht"
+  },
+    {
+    "title": "Überweisen",
+    "url": "http://localhost:4200/Überweisen"
+  },
+    {
+    "title": "Investieren",
+    "url": "http://localhost:4200/Investieren"
+  },
+    {
+    "title": "Produkte",
+    "url": "http://localhost:4200/Produkte"
+  },
+    {
+    "title": "Service",
+    "url": "http://localhost:4200/Service"
+  }
+]
