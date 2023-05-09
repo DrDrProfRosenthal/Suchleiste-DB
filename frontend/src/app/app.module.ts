@@ -7,6 +7,7 @@ import { AccountsOverviewComponent } from './components/accounts-overview/accoun
 import { AccountDetailsComponent } from './components/account-details/account-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { SearchComponent } from './components/search/search.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/accounts', pathMatch: 'full' },
@@ -18,7 +19,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     AccountsOverviewComponent,
-    AccountDetailsComponent
+    AccountDetailsComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
