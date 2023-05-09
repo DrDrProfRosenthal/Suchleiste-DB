@@ -1,6 +1,7 @@
-<app-search></app-search>
 <div class="container">
-    <table class="table table-striped text-center">
+  <input type="text" placeholder="search" name="keyword" [(ngModel)]="keyword" (ngModelChange)="search()"/>
+
+    <table  *ngIf="results" class="table table-striped text-center">
       <thead>
         <tr>
           <th>Account Number</th>
@@ -9,10 +10,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let account of accounts">
+        <tr *ngFor="let account of results">
           <td>{{ account.accountNumber }}</td>
           <td>{{ account.accountName }}</td>
-          <td>{{ account.balance }}</td>
+          <td>{{ account.balance | currency: 'EUR' }}</td>
         </tr>
       </tbody>
     </table>

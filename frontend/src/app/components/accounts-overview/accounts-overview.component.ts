@@ -5,10 +5,12 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-accounts-overview',
   templateUrl: './accounts-overview.component.html',
-  styleUrls: ['./accounts-overview.component.css']
+  styleUrls: ['./accounts-overview.component.css'],
 })
 export class AccountsOverviewComponent implements OnInit {
   accounts: Account[] = [];
+  results: Account[] = [];
+  keyword = '';
 
   constructor(private http: HttpClient) {}
 
@@ -16,9 +18,19 @@ export class AccountsOverviewComponent implements OnInit {
     this.getAccounts();
   }
 
+  search() {
+    this.results = this.accounts.filter((account) =>
+      account.accountName.toLowerCase().includes(this.keyword.toLowerCase()) ||
+      account.accountNumber.toLowerCase().includes(this.keyword.toLowerCase())
+    );
+  }
+
   getAccounts() {
-    this.http.get<Account[]>('http://localhost:3000/bank-accounts').subscribe(data => {
-      this.accounts = data;
-    });
+    this.http
+      .get<Account[]>('http://localhost:3000/bank-accounts')
+      .subscribe((data) => {
+        this.accounts = data;
+        this.results = data;
+      });
   }
 }

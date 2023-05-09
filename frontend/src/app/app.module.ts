@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,7 +7,14 @@ import { AccountsOverviewComponent } from './components/accounts-overview/accoun
 import { AccountDetailsComponent } from './components/account-details/account-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
-import { SearchComponent } from './components/search/search.component';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
+import { registerLocaleData } from '@angular/common';
+import localeDe from '@angular/common/locales/de';
+import localeDeExtra from '@angular/common/locales/extra/de';
+
+registerLocaleData(localeDe, 'de-DE', localeDeExtra);
 
 const routes: Routes = [
   { path: '', redirectTo: '/accounts', pathMatch: 'full' },
@@ -19,10 +26,11 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     AccountsOverviewComponent,
-    AccountDetailsComponent,
-    SearchComponent
+    AccountDetailsComponent
   ],
   imports: [
+    CommonModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     SharedModule,
@@ -30,7 +38,9 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
   ],
   exports: [RouterModule],
-  providers: [],
+  providers: [
+    {provide: LOCALE_ID, useValue: 'de-DE' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,7 +2,7 @@
   {
     "accountNumber": "DE89 3704 0044 0532 0130 00",
     "accountName": "Persönliches Konto",
-    "balance": 1000
+    "balance": 3000
   },
   {
     "accountNumber": "DE75512108001245126199",
@@ -20,3 +20,4 @@
     "balance": 2000
   }
 ]
+
