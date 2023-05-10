@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const bankAccountsRouter = require('./routes/bankAccounts');
+const searchRouter = require('./routes/search');
 const cors = require('cors');
 
 const app = express();
@@ -11,6 +12,7 @@ app.use(cors());
 
 // Mount the bank accounts router at the '/bank-accounts' endpoint
 app.use('/bank-accounts', bankAccountsRouter);
+app.use('/search-results', searchRouter);
 
 // Start the server on port 3000
 app.listen(3000, () => {

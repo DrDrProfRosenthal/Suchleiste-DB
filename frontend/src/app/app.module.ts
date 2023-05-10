@@ -7,6 +7,10 @@ import { AccountsOverviewComponent } from './components/accounts-overview/accoun
 import { AccountDetailsComponent } from './components/account-details/account-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { TransferComponent } from './components/transfer/transfer.component';
+import { InvestComponent } from './components/invest/invest.component';
+import { ProductsComponent } from './components/products/products.component';
+
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -16,9 +20,13 @@ import localeDeExtra from '@angular/common/locales/extra/de';
 
 registerLocaleData(localeDe, 'de-DE', localeDeExtra);
 
+
 const routes: Routes = [
   { path: '', redirectTo: '/accounts', pathMatch: 'full' },
-  { path: 'accounts', component: AccountsOverviewComponent }
+  { path: 'accounts', component: AccountsOverviewComponent }, //overview
+  { path: 'transfer', component: TransferComponent },
+  { path: 'invest', component: InvestComponent },
+  { path: 'products', component: ProductsComponent }
 ];
 
 
@@ -26,7 +34,10 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     AccountsOverviewComponent,
-    AccountDetailsComponent
+    AccountDetailsComponent,
+    TransferComponent,
+    InvestComponent,
+    ProductsComponent
   ],
   imports: [
     CommonModule,
