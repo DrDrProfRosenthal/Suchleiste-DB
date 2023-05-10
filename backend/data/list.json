@@ -1,22 +1,92 @@
 [
   {
     "title": "Finanzuebersicht",
-    "url": "http://localhost:4200/Finanzübersicht"
+    "url": "http://localhost:4200/accounts"
   },
     {
     "title": "Ueberweisen",
-    "url": "http://localhost:4200/Überweisen"
+    "url": "http://localhost:4200/transfer"
   },
     {
     "title": "Investieren",
-    "url": "http://localhost:4200/Investieren"
+    "url": "http://localhost:4200/invest"
   },
     {
     "title": "Produkte",
-    "url": "http://localhost:4200/Produkte"
+    "url": "http://localhost:4200/products"
   },
     {
     "title": "Service",
-    "url": "http://localhost:4200/Service"
+    "url": "http://localhost:4200/services"
   }
+  {
+    "title": "Messages",
+    "url": "http://localhost:4200/messages"
+  },
+  {
+    "title": "Persoenliches Konto",
+    "url": "http://localhost:4200/accounts"
+  },
+  {
+    "title": "maxblue Depotkonto",
+    "url": "http://localhost:4200/accounts"
+  },
+  {
+    "title": "Aktivkonto",
+    "url": "http://localhost:4200/accounts"
+  },
+  {
+    "title": "Depot Verrechnungskonto",
+    "url": "http://localhost:4200/accounts"
+  },
+  {
+    "title": "Empfaenger",
+    "url": "http://localhost:4200/transfer"
+  },
+  {
+    "title": "Anlagemoeglichkeiten",
+    "url": "http://localhost:4200/invest"
+  },
+  {
+    "title": "Deutsche Bank Spar-Konto",
+    "url": "http://localhost:4200/products"
+  },
+  {
+    "title": "Deutsche Bank Kreditkarte",
+    "url": "http://localhost:4200/products"
+  },
+  {
+    "title": "Hypothekendarlehen",
+    "url": "http://localhost:4200/products"
+  },
+  {
+    "title": "Fragen und Antworten",
+    "url": "http://localhost:4200/services"
+  },
+  {
+    "title": "Anträge und Formulare",
+    "url": "http://localhost:4200/services"
+  },
+  {
+    "title": "Investieren",
+    "url": "http://localhost:4200/invest"
+  },
+  {
+    "title": "Anleihen",
+    "url": "http://localhost:4200/invest"
+  },
+  {
+    "title": "Sofort-Überweisung",
+    "url": "http://localhost:4200/transfer"
+  },
+  {
+    "title": "Service",
+    "url": "http://localhost:4200/services"
+  },
+  {
+    "title": "DE8937040040532103000",
+    "url": "http://localhost:4200/accounts"
+  }
+
+
 ]
