@@ -18,12 +18,6 @@ export class AccountsOverviewComponent implements OnInit {
     this.getAccounts();
   }
 
-  search() {
-    this.results = this.accounts.filter((account) =>
-      account.accountName.toLowerCase().includes(this.keyword.toLowerCase()) ||
-      account.accountNumber.toLowerCase().includes(this.keyword.toLowerCase())
-    );
-  }
 
   getAccounts() {
     this.http

@@ -1,11 +1,11 @@
 [
   {
     "title": "Finanzuebersicht",
-    "url": "http://localhost:4200/Finanzübersicht"
+    "url": "http://localhost:4200/accounts"
   },
     {
     "title": "Ueberweisen",
-    "url": "http://localhost:4200/Überweisen"
+    "url": "http://localhost:4200/transfer"
   },
     {
     "title": "Investieren",

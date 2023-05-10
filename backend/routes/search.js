@@ -23,7 +23,7 @@ router.post('/', (req, res) => {
         };
 
     }
-    res.status(200).json(JSON.stringify(result));
+    res.status(200).json(result);
 });
 
 
