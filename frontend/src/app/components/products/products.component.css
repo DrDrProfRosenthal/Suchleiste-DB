@@ -1,0 +1,14 @@
+
+  
+  .button2 {
+    background-color: #008CBA; color:white; 
+    font-size: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    padding: 0.8%;
+
+}
+
+    .button2:hover{
+        text-style:underline;
+    }
