@@ -12,7 +12,7 @@ app.use(cors());
 
 // Mount the bank accounts router at the '/bank-accounts' endpoint
 app.use('/bank-accounts', bankAccountsRouter);
-app.use('/getSearchResults', searchRouter);
+app.use('/search-results', searchRouter);
 
 // Start the server on port 3000
 app.listen(3000, () => {
