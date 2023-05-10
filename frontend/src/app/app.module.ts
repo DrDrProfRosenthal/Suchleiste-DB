@@ -10,6 +10,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { TransferComponent } from './components/transfer/transfer.component';
 import { InvestComponent } from './components/invest/invest.component';
 import { ProductsComponent } from './components/products/products.component';
+import { ServicesComponent } from './components/services/services.component';
+import { MessagesComponent} from './components/messages/messages.component';
 
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -27,7 +29,9 @@ const routes: Routes = [
   { path: 'accounts', component: AccountsOverviewComponent }, //overview
   { path: 'transfer', component: TransferComponent },
   { path: 'invest', component: InvestComponent },
-  { path: 'products', component: ProductsComponent }
+  { path: 'products', component: ProductsComponent },
+  { path: 'services', component: ServicesComponent},
+  { path: 'messages', component: MessagesComponent}
 ];
 
 
