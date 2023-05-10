@@ -11,6 +11,7 @@ import { TransferComponent } from './components/transfer/transfer.component';
 import { InvestComponent } from './components/invest/invest.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ServicesComponent } from './components/services/services.component';
+import { MessagesComponent} from './components/messages/messages.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/accounts', pathMatch: 'full' },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'transfer', component: TransferComponent },
   { path: 'invest', component: InvestComponent },
   { path: 'products', component: ProductsComponent },
-  { path: 'services', component: ServicesComponent}
+  { path: 'services', component: ServicesComponent},
+  { path: 'messages', component: MessagesComponent}
 ];
 
 
