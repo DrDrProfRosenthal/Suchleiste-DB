@@ -18,7 +18,7 @@
     {
     "title": "Service",
     "url": "http://localhost:4200/services"
-  }
+  },
   {
     "title": "Messages",
     "url": "http://localhost:4200/messages"
